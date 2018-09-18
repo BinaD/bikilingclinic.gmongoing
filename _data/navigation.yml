@@ -1,0 +1,11 @@
+- link: /index
+  name: Home
+  highlight: true
+- link: /about
+  name: About
+  highlight: true
+- link: /service
+  name: Service
+  highlight: true
+- link: /contact
+  name: Contact

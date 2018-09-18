@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Noto Serif',serif;
+}
+
+
+img {
+    max-width: 100%;
+}
+.hide {
+    display: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.head{
+        background-color: #77cc6d;
+        display: flex;
+        flex-direction: row-reverse;
+        
+}
+.menu {
+   font-size: 2rem;
+   margin-left: auto;
+   cursor: pointer;
+
+}
+
+.nav {
+    
+     position: absolute;
+     z-index: 100;
+     width: 100%;
+    transition: all ease-in .5s;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.side-nav {
+    border: #314435 solid 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #77cc6d;
+}
+.big-logo{
+    display: none;
+}
+.side-nav a {
+    display: block;
+    color: #000000;
+    padding: 2em;
+    font-size: 20px;
+    background: home-discription;
+    border-bottom: #314435 solid 1px; 
+}
+
+/* Home-second-section styling */
+.home-discription {
+    padding: 1em;
+    text-align: center;
+    text-align: justify;
+}
+
+.home-sectionImg {
+ background-image: url(../images/background/clinic-despensary-mangement-software.jpg);
+     background-repeat: no-repeat; 
+   
+} 
+
+.home-contentHover {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1px;
+    padding: 2em;
+}
+
+.home-contentHover h2, p {
+    text-align: center;
+    text-align: justify;
+    
+}
+
+.thirdSection {
+    margin: 1em;
+}
+
+.f1_container {
+    margin: 1em;
+}
+
+.f1_card {
+    /* width:200px;
+    height:291px; */
+    position:relative;
+    float:left;
+    margin-left:5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+}
+
+.f1_card:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.f1_card div {
+    border-radius:15px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    padding: 1em;
+
+}
+
+.back {
+    z-index: 1;
+    background-color: #77cc6d;
+}
+
+.back .face {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.footer {
+    background-image: url(../images/background/footers.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    /* margin: 0 auto;
+    padding: 1.5em;
+    ; */
+}
+
+/* About us styling */
+.hero {
+    background-image: url(../images/background/services.jpg);
+    /* background-repeat: no-repeat; */
+    height: 200px;
+    text-align: center;
+    padding: 4em;
+}
+
+.heroHeading {
+    margin: 4em;
+    padding: 2em;
+}
+
+.about_mainContent {
+    display: flex;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.contentImg {
+    width: 100%;
+}
+
+.content {
+    padding: 1em;
+    margin: 2em;
+}
+
+.contentParagraph {
+    margin: 1em;
+    text-align: center;
+}
+
+.cards-container {
+    border: solid 1px #7878;
+    padding: .8em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-shadow: 8px 6px 18px 5px rgba(183, 183, 194, 0.404);
+}
+
+
+/* Media quiery styling */
+
+@media(min-width:720px){
+    .logo{
+        display: none;
+    }
+    .big-logo{
+        display: block;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        padding: 1rem;
+        background-color: #77cc6d;
+    }
+   .nav{
+       position: static;
+      text-align: right;
+
+   }
+ .nav a{
+        display: inline-block;
+    }
+
+    .home-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .side-nav {
+        margin-top: -25%;
+        position: relative;
+        z-index: 1;
+    }
+    .side-nav a:last-child {
+        border-bottom: none;
+    }
+
+   .home-discription {
+        padding:2em ;
+    }
+    
+    .home-contentHover {
+        padding: 30px 40px 30px 50px;
+        width: 100%;
+        position: relative;
+        color:#77cc6d;
+    
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        width: 50%;
+        margin-left: auto;
+       
+    }
+
+    .fadeInUp:hover {
+        animation-duration: 2s;
+        font-size: 20px;
+        
+    }
+    .f1_container {
+        position:relative;
+        -webkit-perspective:1000;
+        perspective:1000;
+    }
+
+    .thirdSection {
+        display: flex;
+    }
+    .doctors {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .cards-container {
+         margin: 1em;
+    }
+    
+   
+}
+
+
+@media(min-width:1020px){
+    .thirdSection {
+        
+        /* display: grid;
+        grid-auto-columns: repeat(4, 1fr);
+        grid-gap: 1em; */
+    }
+}
